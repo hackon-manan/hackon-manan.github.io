@@ -18,7 +18,7 @@ window.fbAsyncInit = function() {
     FB.init({
         appId      : '1712157399074681',
         xfbml      : true,
-        version    : 'v2.2',
+        version    : 'v2.8',
         cookie  : true,
     });
 
@@ -29,13 +29,14 @@ function fbLogoutUser() {
         FB.logout(function(response) {
             console.log("User is loged off");
             console.log(response);   
-        });
-        if($.removeCookie('userId', { path: '/Hackon' }))
+                 if($.removeCookie('userId', { path: '/' }))
             console.log('cookie deleted');
         else
             console.log('err del cookie');
         //alert($.cookie('userId'));
         document.location.href="../../index.html";
+        });
+       
         
     });
     
