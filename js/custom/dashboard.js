@@ -5,6 +5,12 @@ $(function(){
         location.href="index.html";
     }
     else{
+        window.onclick = function(event) {
+      if (event.target == responseModel) {
+          responseModel.style.display = "none";
+         
+      }
+  }
       var loadModel=document.getElementById('loadModel');
 var responseModel=document.getElementById('responseModel');
 
@@ -36,5 +42,8 @@ var responseModel=document.getElementById('responseModel');
               });
 
     }
+    $('#close-span').click(function(){
+      responseModel.style.display="none";
+  });
    
 });
