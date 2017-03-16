@@ -9,8 +9,8 @@
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: transparent;/* Fallback color */
-    background-color: transparent ;/* Black w/ opacity */
+    background-color:blue;/* Fallback color */
+    background-color: blue;/* Black w/ opacity */
     
 }
 
