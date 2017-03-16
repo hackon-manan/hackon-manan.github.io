@@ -16,7 +16,7 @@
 window.fbAsyncInit = function() {
     //SDK loaded, initialize it
     FB.init({
-        appId      : '1572211359712500',
+        appId      : '1712157399074681',
         xfbml      : true,
         version    : 'v2.2',
         cookie  : true,
