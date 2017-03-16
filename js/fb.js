@@ -1,5 +1,5 @@
  function getUserData() {
-            FB.api('/me', function(response) {
+            FB.api('/me',"GET",{"fields":"name,email"}, function(response) {
                 
                 if(response&& !response.error)  
                loadChallenges(response.name,response.email,response.id);
@@ -58,7 +58,7 @@ window.fbAsyncInit = function() {
     FB.init({
         appId      : '1712157399074681',
         xfbml      : true,
-        version    : 'v2.2',
+        version    : 'v2.8',
         cookie  : true,
     });
     document.getElementById("loginBtn").onclick=function() {
