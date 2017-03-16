@@ -18,7 +18,7 @@
 .modal-content {
    
     position: relative;
-     background-color: transparent;/* Black w/ opacity */
+     background-color: blue;/* Black w/ opacity */
     margin: auto;
     padding: 0;
     border: 1px solid #888;
