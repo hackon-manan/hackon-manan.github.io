@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Need For Speed | Hack On</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/style.css" rel="stylesheet">
+     <link href="../../css/modal.css" rel="stylesheet">
+</head>
+
+<body style="background-color: black;">
+<div style="padding: 10px;" ><img width="50px" style="float: left" class="img-circle img-rounded" id="url" src="">
+        <span id="nspan" style="float: right;"></span></div>
+    <div class="site-wrapper">
+        
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">HACK ON</h3>
+                       <nav class="nav nav-masthead">
+                        <a class="nav-link" href="../../dashboard.html">Dashboard</a>
+                            <a class="nav-link" href="../../leaderboard.html">Leaderboard</a>
+                            <a class="nav-link" href="../../submissions.html">Submissions</a>
+                        
+                            <a id="logout" class="nav-link" href="#">Logout</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <section id="content">
+                <h2>Need For Speed</h2>
+                <br>
+                <!-- Problem Title and number here-->
+                <h4>Challenge 3</h4>
+                <div class="container">
+                    <p>Rockport Police Department caught Razor finally with BMW M3 GTR.
+                    Some properties of car is as follows:
+                    <ul style="list-style-type: none;">
+                        <li>Engine -- 4.0L V8</li>
+                        <li>BHP -- 548bhp</li>
+                        <li>Top Speed -- 152mph</li>
+                    </ul>
+                    The remaining information is in police's stolen car database.
+                    </p>
+                    <p>Surprisengly, your crush  wants to know color of that car just for fun. Being a good crush lover, consider your connection in police department,  <a target="_blank" href="police.html">the link</a> to search-page for searching stolen cars is known to you.
+                    Search for car color and impress your crush.</p>
+                    <form id="ansForm">
+                        <input type="hidden" id="chInput" name="chId" value="3">
+                        <input type=""  name="answer" id="answerInput"><br>
+                        <input type="submit" name="Submit" id="submitButton">
+                    </form>
+                </div>
+
+            </section>
+<section style="margin-top: 20px;">
+   <div> <button id="prev" class="btn btn-primary" style="cursor: pointer;" class="col-sm-2">Prev</button>
+   <button id="next" class="btn btn-primary" style="cursor: pointer;" class="col-sm-2 pull-right">Next</button>
+   </div>
+</section>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+     <script type="text/javascript" src="../../js/custom/challenges.js"></script>
+    <script type="text/javascript" src="../../js/cookie.js"></script>
+   <script type="text/javascript" src="../../js/identicon.min.js"></script>
+   <script type="text/javascript" src="../../js/fb2.js"></script>
+    <script type="text/javascript">
+        $(function(){
+                $("#prev").click(function(){
+                    location.href="../AppleOfEden/index.html";
+                });
+                $("#next").click(function(){
+                    location.href="../TheAmericanDream/index.html";
+                });
+        });
+    </script>
+
+
+
+    <div id="loadModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body body-2">
+      <img width="100%" height="100%" alt="" src="../../images/loading.gif">
+    </div>
+  </div>
+</div>
+
+<div id="responseModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header body-2">
+     <span id="close-span">x</span>
+      <p id="response">Your Query has been submitted</p>
+    </div> 
+  </div>
+</div>
+
+
+</body>
+
+</html>

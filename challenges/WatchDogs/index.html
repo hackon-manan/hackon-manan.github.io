@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Watch Dogs | Hack On</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/modal.css" rel="stylesheet">
+
+</head>
+
+<body style="background-color: black;">
+<div style="padding: 10px;" ><img width="50px" style="float: left" class="img-circle img-rounded" id="url" src="">
+        <span id="nspan" style="float: right;"></span></div>
+    <div class="site-wrapper">
+          
+        <div class="site-wrapper-inner">
+
+           <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">HACK ON</h3>
+                          <nav class="nav nav-masthead">
+                        <a class="nav-link" href="../../dashboard.html">Dashboard</a>
+                            <a class="nav-link" href="../../leaderboard.html">Leaderboard</a>
+                            <a class="nav-link" href="../../submissions.html">Submissions</a>
+                            <a class="nav-link" href="#" id="logout">Logout</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <section id="content">
+                <h2>Watch Dogs</h2>
+                <br>
+                <!-- Problem Title and number here-->
+                <h4>Challenge 1</h4>
+                <div class="container">
+                    <p>Aiden Pearce, turning into antagonist, hacks the Hackon database and set password for each account. But he is kind in different perspective. <a style="text-decoration: underline;" href="#" id="password">Click here</a> to request him for the password.</p>
+                    <p>He is a hacker and know network vulnerabilities.The only required thing is standard like him.</p>
+                     <form id="ansForm">
+                        <input type="hidden" id="chInput" name="chId" value="1">
+                        <input type=""  name="answer" id="answerInput"><br>
+                        <input type="submit" name="Submit" id="submitButton">
+                    </form>
+                </div>
+
+            </section>
+<section style="margin-top: 20px;">
+   <div> <button id="prev" class="btn btn-primary" style="cursor: pointer;" class="col-sm-2">Prev</button>
+   <button id="next" class="btn btn-primary" style="cursor: pointer;" class="col-sm-2 pull-right">Next</button>
+   </div>
+</section>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="../../js/custom/challenges.js"></script>
+    <script type="text/javascript" src="../../js/cookie.js"></script>
+    <script type="text/javascript" src="../../js/fb2.js"></script>
+    <script type="text/javascript">
+        $(function(){
+                $("#prev").click(function(){
+                    location.href="../TreasureHunt/index.html";
+                });
+                $("#next").click(function(){
+                    location.href="../AppleOfEden/index.html";
+                });
+        });
+    </script>
+
+    <div id="loadModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body body-2">
+      <img width="100%" height="100%" alt="" src="../../images/loading.gif">
+    </div>
+  </div>
+</div>
+
+<div id="responseModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header body-2">
+     <span id="close-span">x</span>
+      <p id="response">Your Query has been submitted</p>
+    </div> 
+  </div>
+</div>
+
+</body>
+
+</html>

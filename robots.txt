@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /missions/
+Disallow: /killing/all/humans/
+Disallow: /challenges/AppleOfEden/location/index.html

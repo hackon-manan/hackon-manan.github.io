@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Apple Of Eden | Hack On</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/modal.css" rel="stylesheet">
+</head>
+
+<body style="background-color: black;">
+<div style="padding: 10px;" ><img width="50px" style="float: left" class="img-circle img-rounded" id="url" src="">
+        <span id="nspan" style="float: right;"></span></div>
+    <div class="site-wrapper">
+      
+        <div class="site-wrapper-inner">
+
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">HACK ON</h3>
+                         <nav class="nav nav-masthead">
+                        <a class="nav-link" href="../../dashboard.html">Dashboard</a>
+                            <a class="nav-link" href="../../leaderboard.html">Leaderboard</a>
+                            <a class="nav-link" href="../../submissions.html">Submissions</a>
+                            <a id="logout" class="nav-link" href="#">Logout</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <section id="content">
+                <h2>Apple Of Eden</h2>
+                <br>
+                <!-- Problem Title and number here-->
+                <h4>Challenge 2</h4>
+                <div class="container">
+                    <p>Desmond Miles escapes from Abstergo's robotics like machine ANIMUS and secretly save the location of Apple Of Eden on the web. Abstergo came to know and tried to find location on web. But they are with zero luck.</p>
+                    <p>Consider yourself on the Templar side. Luckily, Desmond hide location on Hackon website as it is known for no security breaches. But you have full access to this site. Help templars and tell the location.</p>
+                    <form id="ansForm">
+                        <input type="hidden" id="chInput" name="chId" value="2">
+                        <input type=""  name="answer" id="answerInput"><br>
+                        <input type="submit" name="Submit" id="submitButton">
+                    </form>
+                </div>
+
+            </section>
+<section style="margin-top: 20px;">
+   <div> <button class="btn btn-primary" style="cursor: pointer;" class="col-sm-2" id="prev">Prev</button>
+   <button class="btn btn-primary" id="next" style="cursor: pointer;" class="col-sm-2 pull-right">Next</button>
+   </div>
+</section>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/custom/challenges.js"></script>
+    <script type="text/javascript" src="../../js/cookie.js"></script>
+    <script type="text/javascript" src="../../js/fb2.js"></script>
+    <script type="text/javascript">
+        $(function(){
+                $("#prev").click(function(){
+                    location.href="../WatchDogs/index.html";
+                });
+                $("#next").click(function(){
+                    location.href="../NeedForSpeed/index.html";
+                });
+        });
+    </script>
+
+
+
+
+    <div id="loadModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body body-2">
+      <img width="100%" height="100%" alt="" src="../../images/loading.gif">
+    </div>
+  </div>
+</div>
+
+<div id="responseModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header body-2">
+     <span id="close-span">x</span>
+      <p id="response">Your Query has been submitted</p>
+    </div> 
+  </div>
+</div>
+
+</body>
+
+</html>

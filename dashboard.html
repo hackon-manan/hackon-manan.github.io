@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Dashboard | Hack On</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+<link href="css/modal.css" rel="stylesheet">
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ 
+    <script type="text/javascript" src="js/cookie.js"></script>
+    <script type="text/javascript" src="js/custom/dashboard.js"></script>
+    <script type="text/javascript" src="js/fbdash.js"></script>
+</head>
+
+<body style="background-color: black;">
+
+    <div class="site-wrapper" >
+
+        <div class="site-wrapper-inner">
+        <div style="padding: 10px;" ><span id="nspan" style="float: left;">Hello,</span><img width="50px" style="float: right" class="img-circle img-rounded" id="url" src=""></div>
+            <div class="cover-container">
+                <div class="masthead clearfix">
+                <!-- <img id="url" src=""> -->
+                    <div class="inner">
+
+                        <h3 class="masthead-brand">HACK ON</h3>
+                        <nav class="nav nav-masthead navbar-fixed">
+                            <a class="nav-link" href="leaderboard.html">Leaderboard</a>
+                            <a class="nav-link" href="submissions.html">Submissions</a>
+                            <a class="nav-link" href="getstarted.html">Get Started</a>
+                            <a id="logout" class="nav-link" href="#">Logout</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <section id="content">
+                <h2>Problems</h2>
+                <br>
+                <p>Total Score: <span id="score"></span></p>
+                <br>
+                <h4>Hack 'em up or go home!</h4>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3" id="1">
+                            <a href="challenges/WatchDogs/index.html">
+                                <div class="team-member card">
+
+                                    <div class="challenge-info">
+                                        <h2>Watch Dogs</h2>
+                                        <h3>Challenge 1</h3>
+                                        <p>Aiden Pearce, turning into antagonist, hacks the Hackon datbase</p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3" id="2">
+                            <a href="challenges/AppleOfEden/index.html">
+                                <div class="team-member card">
+
+                                    <div class="challenge-info">
+                                        <h2>Apple Of Eden</h2>
+                                        <h3>Challenge 2</h3>
+                                        <p>Desmond Miles escapes from Abstergo's robotics like machine ANIMUS</p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3" id="3">
+                            <a href="challenges/NeedForSpeed/index.html">
+                                <div class="team-member card">
+
+                                    <div class="challenge-info">
+                                        <h2>Need For Speed</h2>
+                                        <h3>Challenge 3</h3>
+                                        <p>Rockport Police Department caught Razor finally with BMW M3 GTR.</p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3" id="4">
+                            <a href="challenges/TheAmericanDream/index.html">
+                                <div class="team-member card">
+
+                                    <div class="challenge-info">
+                                        <h2>The American Dream</h2>
+                                        <h3>Challenge 4</h3>
+                                        <p>Nicole Horne's personal army, known as the Killer Suits, breaks in Max</p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3" id="5">
+                            <a href="challenges/EscapePlan/index.html">
+                                <div class="team-member card">
+
+                                    <div class="challenge-info">
+                                        <h2>Escape plan</h2>
+                                        <h3>Challenge 5</h3>
+                                        <p>Connor Kenway was put in jail by Templars. He saw some encrypted messsage </p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3" id="6">
+                            <a href="challenges/ROT13/index.html">
+                                <div class="team-member card">
+
+                                    <div class="challenge-info">
+                                        <h2>ROT13</h2>
+                                        <h3>Challenge 6</h3>
+                                        <p>Someone just want to say you something. That someone want to listen from you </p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3" id="7">
+                            <a href="challenges/HelpInbusiness/index.html">
+                                <div class="team-member card">
+
+                                    <div class="challenge-info">
+                                        <h2>Help in Business</h2>
+                                        <h3>Challenge 7</h3>
+                                        <p>Have you ever thought the life of a mafia? You want to be? Well we will</p>
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-3" id="8">
+                            <a href="challenges/TreasureHunt/index.html">
+                                <div class="team-member card">
+                                    <div class="challenge-info">
+                                        <h2>Treasure Hunt</h2>
+                                        <h3>Challenge 8</h3>
+                                        <p>Imagine what will happen if you are in a place full of treasures and buried</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+
+       <div id="loadModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body body-2">
+      <img width="100%" height="100%" alt="" src="images/loading.gif">
+    </div>
+  </div>
+</div>
+
+<div id="responseModel" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header body-2">
+     <span id="close-span">x</span>
+      <p id="response">Your Query has been submitted</p>
+    </div> 
+  </div>
+</div>
+
+    
+</body>
+
+</html>

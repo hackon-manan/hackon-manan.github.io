@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+   
 
     <title>Hack On | Elements Culmyca</title>
 
@@ -16,13 +16,30 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/modal.css" rel="stylesheet">
+    
+    <style type="text/css">
+        .glyphicon-refresh-animate {
+    -animation: spin .7s infinite linear;
+    -webkit-animation: spin2 .7s infinite linear;
+}
+
+@-webkit-keyframes spin2 {
+    from { -webkit-transform: rotate(0deg);}
+    to { -webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    from { transform: scale(1) rotate(0deg);}
+    to { transform: scale(1) rotate(360deg);}
+}
+    </style>
 </head>
 
-<body >
+<body style="background-color: black;">
 
-        <div id="particles-js" style="position: fixed;z-index: -2"></div>
+        
 
-            <div class="site-wrapper" style="z-index: -1">
+            <div class="site-wrapper" style="z-index: 99999">
 
                 <div class="site-wrapper-inner">
 
@@ -31,30 +48,45 @@
                             <div class="inner">
                                 <h3 class="masthead-brand">HACK ON</h3>
                                 <nav class="nav nav-masthead">
-                                <a class="nav-link" href="getstarted.html">Get Started</a>
+                                   <a class="nav-link" href="index.html">Home</a>
                                     <a class="nav-link" href="leaderboard.html">Leaderboard</a>
                                     <a class="nav-link" href="submissions.html">Submissions</a>
-                                 
                                 </nav>
                             </div>
                         </div>
                         <div class="inner cover">
-                            <h1 class="cover-heading">HACK ON</h1>
-                            <p class="lead">Hack On is a prefest hacking and penetration testing event for Elements Culmyca' 17 , the annual cutural and technical fest of YMCA University of Science and Technology, Faridabad</p>
-                            <p class="lead">
-                                <button id="loginBtn" class="btn btn-lg btn-secondary">Login with Facebook</button>
-                            </p>
+                           
+                           <section style="z-index: -9999;">
+    <div class="container" style="margin-top: 100px;">
+      <div class="row">
+       <div class="col s12" style="padding:10px;">
+        <hr>
+        <p>If you having problem while playing this game or you don't understand what to do, then follow this guide.</p>
+        <p>Lets try to encode a string "HACKON"<br> Input String --> HACKON</p><br>
+     
+        <p>Binary Representation --> 010010000100000101000011010010110100111101001110</p>
+        <p>Hexadecimal Representation -->4841434b4f4e</p>
+        <p>Decimal Representation --> 726567757978 </p>
+        <p>Octal Representaion --> 110 101 103 113 117 116</p>
+       </div>
+    </div>
+    
+    <div class="row">
+       <div class="col s12" style="padding:10px;">
+        <h5>Hope that you get an idea, what these challenges are about.</h5><hr>
+        <p>Use your skills to complete every challenge. You will surely learn a lot of new things </p>
+       </div>
+    </div>
+ 
+    </div>
+</section>
+                            
                         </div>
 
-                        <div class="mastfoot">
-                            <div class="inner">
-                                <p>Unveil the hacker in you.</p>
-
-                            </div>
-                        </div>
+                      
 
                     </div>
-               
+                   
                 </div>
 
             </div>
@@ -65,11 +97,8 @@
             ================================================== -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <script type="text/javascript" src="js/cookie.js"></script>
-             <script type="text/javascript" src="js/fb.js"></script>
-
-
-                  <div id="loadModel" class="modal">
+            
+                   <div id="loadModel" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
     <div class="modal-body body-2">
@@ -89,11 +118,12 @@
 </div>
 
 
+
 </body>
-<script src="js/particles.min.js"></script>
-<script src="js/app.js"></script>
+<!-- <script src="js/particles.min.js"></script>
+<script src="js/app.js"></script> -->
 <!-- stats.js -->
-<script src="js/lib/stats.js"></script>
+<!-- <script src="js/lib/stats.js"></script> -->
 <script>
 $("#abt-btn").click(function() {
     $(".about").css({"opacity":"1","transform":"translateY(-400px)"});
@@ -102,5 +132,18 @@ $("#closebtn").click(function() {
     $(".about").css({"opacity":"0","transform":"translateY(0)"});
 })
 
+</script>
+<script type="text/javascript">
+    $(function(){
+         window.onclick = function(event) {
+      if (event.target == responseModel) {
+          responseModel.style.display = "none";
+         
+      }
+  }
+         $('#close-span').click(function(){
+      responseModel.style.display="none";
+  });
+    });
 </script>
 </html>
