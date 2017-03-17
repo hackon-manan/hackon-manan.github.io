@@ -4482,7 +4482,7 @@ $(function() {
               var password=$('#password').val();
 
               if(name=="js"&&password=="hacking"){
-                alert("Username and password is matched");
+               // alert("Username and password is matched");
                   var userId=$.cookie('userId');
                   var ans=name+password;
                   var chId=$('#chInput').val().trim();
