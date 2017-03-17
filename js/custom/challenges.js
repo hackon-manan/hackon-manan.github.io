@@ -25,7 +25,7 @@ $(function(){
                   type:'GET',
                 success: function(result){
                    loadModel.style.display="none";
-                  $('#response').html(result.result);
+                  $('#response').html("Password has arrived.");
                    responseModel.style.display="block";
                 },
               error:function(){
