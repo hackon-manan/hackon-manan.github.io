@@ -61,7 +61,7 @@
    </div>
 </section>
             <section style="margin-top: 20px;">
-   <div> <button id="prev" class="btn btn-primary" style="cursor: pointer;" class="col-sm-2">Get Hint</button>
+   <div> <button id="hint" class="btn btn-primary" style="cursor: pointer;" class="col-sm-2">Get Hint</button>
    
    </div>
 </section>
@@ -85,6 +85,13 @@
                     location.href="../AppleOfEden/index.html";
                 });
         });
+    </script>
+    <script>
+      $(function(){
+        $('#hint').click(function(){
+            alert('Try to hit the url in the browser which is bringing password.');
+        });
+      });  
     </script>
 
     <div id="loadModel" class="modal">
